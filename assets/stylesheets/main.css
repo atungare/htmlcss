@@ -1,5 +1,18 @@
 /*
   ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*
+  ========================================
   Grid
   ========================================
 */
@@ -104,6 +117,26 @@ cite, em {
   font-style: italic;
 }
 
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
 
 /*
   ========================================
@@ -130,9 +163,6 @@ p a {
 .primary-footer a:hover {
   color: #648880;
 }
-
-
-
 
 /*
   ========================================
@@ -182,28 +212,6 @@ p a {
 
 .teaser a:hover h3 {
   color: #a9b2b9;
-}
-
-
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
-.group {
-  clear: both;
-  *zoom: 1;
 }
 
 /*
@@ -263,6 +271,17 @@ p a {
   text-align: right;
 }
 
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+.nav li:last-child {
+  margin-right: 0;
+}
+
+
 /*
   ========================================
   Leads
@@ -277,15 +296,18 @@ p a {
   line-height: 33px;
 }
 
-
 /*
   ========================================
-  Custom styles
+  Speakers
   ========================================
 */
-
-body {
-  background: #293f50;
-  color: #888;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.speaker {
+  margin-bottom: 44px;
+}
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px 0;
+  text-align: center;
 }
